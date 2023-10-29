@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="challenge2.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <form id="form" action="">
+                <div class="title-web"><b>TRAVELEEN</b></div>
+                <img src="Logo.svg" alt="Logo" class="logo" />
+                <div class="title-daftar"><b>Daftar</b></div>
+                <div class="nama-akun"><b>YULIA RIESTA FARADILA</b></div>
+            <div class="input-box" id="nameBox">
+                <label for="username">Username</label>
+                <input type="text" placeholder="arthurmorgan" id="username" required>
+            </div>
+            <div class="input-box">        
+                <label for="email">Email</label>
+                 <input type="text" placeholder="arthurmorgan@gmail.com" id="email" required>
+            </div>
+
+            <div class="inputpw-box">
+                <label for="password">Kata Sandi</label>
+                <input type="password" placeholder="********" id="password" required>
+                <img src="Icon.svg" aria-hidden="true" id="eye" onclick="toggle('password', 'eye')">
+            
+                <div class="pesan">
+                <p>Pakai kata sandi minimal 6 karakter dan bedakan dengan kata sandi akun media sosial atau website lain.</p></div>
+            </div>
+
+            <div class="inputpw-box">
+                <label for="password">Konfirmasi Kata Sandi</label>
+                <input type="password" placeholder="********" id="password2" required>
+                <img src="Icon.svg" aria-hidden="true" id="eye2" onclick="toggle('password2', 'eye2')">
+
+             </div>
+
+             <div class="pesan1"><p>Dengan mengklik Daftar, kamu menyetujui Ketentuan, Kebijakan Privasi, dan Kebijakan Cookie kami. Kami dapat mengirimkan pemberitahuan SMS yang dapat dihentikan kapan saja.</p></div>
+            <button type="submit" id="masukbtn" class="btn">Masuk</button>
+
+            <div class="masuk-link">
+            <p>Sudah punya akun?<a href="login.html"> Masuk</a>
+            </p>
+            </div>
+        </form>
+        </div>
+    </body>
+
+    <style>
+        body {
+			background-image: url(Signup.svg);
+            justify-content: center;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: Arial;
+            background-repeat: no-repeat;
+            background-size: cover;
+		}
+
+        #form {
+            background: white;
+            width:300px;
+            margin: 20 vh auto 0 auto;
+            margin-top: 50px;
+            padding:20px;
+            font-family: Arial;
+            font-size: 10px;
+            border-radius: 5px;
+        }
+        .title-web{
+            font-size: 20px;
+            font-family: Verdana;
+            text-align: center;
+            flex: 1;
+        }
+        .logo {
+            left: 41%;
+            width: 26px;
+            height: 30px;
+            position: absolute;
+            top: 12.5%; 
+        }
+
+        .title-daftar{
+            margin-top: 5%;
+            font-family: Arial;
+            font-size: 36px;
+            text-align: center;
+        }
+        .nama-akun{
+            font-family: Arial;
+            margin-top: 3%;
+            font-size: 12px;
+            text-align: center;
+            color:rgba(115, 115, 115, 1);
+            margin-top: 10px;
+        }
+        .input-box{
+            margin-top: 20px;
+            display:flex;
+            flex-direction: column;
+            font-family: Arial;
+            margin-bottom: 20px;
+        }
+        .inputpw-box{
+            display:flex;
+            flex-direction: column;
+            font-family: Arial;
+            margin-bottom: 20px;
+        }
+        .input-box label{
+            font-size: 10px;
+            font-family: Arial;
+            margin-bottom: 5px;
+        }
+        .inputpw-box label{
+            font-size: 10px;
+            font-family: Arial;
+            margin-bottom: 3px;
+        }
+        .input-box input{
+            width: 100%;
+            font-size: 11px;
+			padding: 6px;
+			display: block;
+			border: 1.25px solid #ccc;
+            border-radius: 8px;
+			box-sizing: border-box;
+        }
+        .inputpw-box input{
+            width: 100%;
+            font-size: 11px;
+			padding: 6px;
+			display: inline-block;
+			border: 1.25px solid #ccc;
+            border-radius: 8px;
+			box-sizing: border-box;
+        }
+        #eye{
+            position: absolute;
+            width:14px;
+            right:490px;
+            transform: translate(0, -50%);
+            top:353px;
+            color:#999;
+        }
+        #eye2{
+            position: absolute;
+            width:14px;
+            right:490px;
+            transform: translate(0, -50%);
+            top:457px;
+            color:#999;
+        }
+        #form .inputpw-box .pesan{
+            font-family: Arial;
+            font-size: 10px;
+            color:rgba(115, 115, 115, 1);
+        }
+        #form .pesan1{
+            margin-top: 5%;
+            font-family: Arial;
+            text-align: justify;
+            font-size: 11px;
+            color:rgba(115, 115, 115, 1);
+        }
+        #form .btn {
+			background-color: #30b378;
+			color: white;
+			padding: 14px 20px;
+			margin-top: 0px;
+			border: none;
+			cursor: pointer;
+            border-radius: 4px;
+			width: 100%;
+		}
+        #form .masuk-link{
+            font-size: 11px;
+            color:rgba(115, 115, 115, 1);
+            font-weight: 600;
+            text-align: center;
+            margin-top:20px;
+        }
+        .masuk-link p a {
+			color: #30b378;
+            text-decoration: none;
+            font-weight: 600;
+		}
+
+    </style>
+    <script>
+        var passwordVisibilityState = false;
+            function toggle(inputId, eyeId) {
+                var passwordInput = document.getElementById(inputId);
+                var eyeIcon = document.getElementById(eyeId);
+
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    eyeIcon.src = "Icon melek.svg"; // Ganti ikon mata
+                    passwordVisibilityState = true;
+                } else {
+                    passwordInput.type = "password";
+                    eyeIcon.src = "Icon.svg"; // Ganti ikon mata kembali
+                    passwordVisibilityState = false;
+                }
+            }
+
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var isLoginSuccessful = true; 
+
+            if (isLoginSuccessful) {
+                alert("Selamat, Anda berhasil mendaftar!");
+            } else {
+                alert("Gagal mendaftar. Periksa kembali data Anda.");
+            }
+        });
+    </script>
+</html>

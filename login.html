@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Challenge dap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border: 0;
+        border-style: solid;
+      }
+      p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button, button, input, optgroup, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+        text-transform: none;
+      }
+      button, [type="button"], [type="reset"], [type="submit"] {
+        -moz-focus-inner {
+          border: none;
+          padding: 0;
+        }
+        :-moz-focus {
+          outline: 1px dotted ButtonText;
+        }
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+    </style>    
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        text-transform: none;
+        letter-spacing: normal;
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./login.css" />
+    <div>
+      <link href="./login.css" rel="stylesheet" />
+
+      <div class="container">
+        <div class="login">
+          <div class="frame2015">
+            <div class="frame2013">
+              <div class="logo-login">
+                <div class="grup1-login">
+                    <div class="logo-traveleen">
+                      <img
+                        src="Logo.svg"
+                        alt="Logo"
+                        class="login-vector"
+                      />
+                    </div>
+                </div>
+              </div>
+              <span class="traveleen-text"><span>TRAVELEEN</span></span>
+            </div>
+            <div class="frame2014">
+              <span class="masuk 5xlBold"><span>Masuk</span></span>
+              <span class="nama-login lgSemiBold">
+                <span>ARSY KURNIA FITRI</span>
+              </span>
+            </div>
+            <div class="input-field-input1">
+              <span class="login-username textSmmedium">
+                <span>Username atau Email</span>
+              </span>
+              <input
+              type="text"
+              placeholder="arsykurniaa@gmail.com"
+              class="input-email"
+              />
+            </div>
+            <div class="input-field-input2">
+              <span class="pass-login textSmmedium">
+                <span>Kata Sandi</span>
+              </span>
+              <div class="input-pass">
+                <i class="<i class="fa-light fa-eye"></i>
+                <span class="login-pass BaseRegular">
+                  <input class="password"
+                    type="password"
+                    placeholder="**************"
+                    class="login-input"
+                    id="myInput"
+                  />
+                </span>
+                <img
+                  src="Icon.svg"
+                  alt="icon"
+                  class="icon-eye"
+                  id="eyeIcon"
+                  onclick="togglePasswordVisibility()"
+                />
+              </div>
+            </div>
+            <div class="frame2018">
+              <div class="frame2008">
+                <form action="/coba/Login.html" method="post">
+                <div class="unchecked-box-login">
+                  <input type="checkbox" name="ingat-saya" id="ingat-saya" class="checkbox-login">
+                  <span class="ingat-ingat BaseRegular">
+                    <span>Ingat Saya</span>
+                  </span>
+                </div>
+              </form>
+                <span class="login-lupa BaseRegular">
+                  <span>Lupa Kata Sandi</span>
+                </span>
+              </div>
+              <button type="button" onclick="masuk()" class="login-button" id="button-masuk" >
+                <span class="login-buttonmasuk BaseSemiBold">
+                  <span>Masuk</span>
+                </span>
+              </button>
+            </div>
+            <span class="login-tidak BaseSemiBold">
+              <span class="login-punya">Tidak Punya Akun?</span>
+              <span class="login-akun"></span>  
+              <a href="challenge2.html" class="daftar-akun">Daftar</a>
+            </span>
+          </div>
+          <div class="login-outlineeyeoff"></div>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
